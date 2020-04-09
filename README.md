@@ -1,6 +1,6 @@
-# aziziqbal
+# Muh Aziz Iqbal
 
-> Portofolio Muh Aziz Iqbal
+> Portofolio Muh Aziz Iqbal, 
 > Made with Vue.js, Nuxt.js and Vuetify
 
 

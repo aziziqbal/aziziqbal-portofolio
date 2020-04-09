@@ -43,7 +43,7 @@
       </template>
     </v-navigation-drawer>
     <v-content>
-      <v-container>
+      <v-container style="padding:0px;">
         <nuxt />
       </v-container>
     </v-content>

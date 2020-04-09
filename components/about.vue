@@ -1,54 +1,30 @@
 <template>
   <section id="about" class="hide-overflow">
     <v-layout>
-      <v-flex hidden-sm-and-down md6>
-        <v-img
-          src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
-          height="100vh"
-        />
-      </v-flex>
-
-      <v-flex
-        xs12
-        md6
-        align-content-space-between
-        layout
-        :pa-5="$vuetify.breakpoint.smAndDown"
-        wrap
-      >
-        <base-bubble-1
-          style="transform: rotate(180deg) translateY(25%)"
-        />
-
-        <v-layout
-          align-center
-          justify-center
-        >
-          <v-flex
-            xs10
-            md6
-          >
-            <base-heading>Welcome About!</base-heading>
-            <base-text>
-              Lorem ipsum dolor sit amet, consectetur ad
-              ipiscin elit. Etiam vulputate augue vel felis gra
-              vida porta. Lorem ipsum dolor sit amet, cons
-              ectetur adipiscing elit.<br>
-              Lorem ipsum dolor sit amet, consectetur ad
-              ipiscin elit. Etiam vulputate augue vel felis gra
-              vida porta. Lorem ipsum dolor sit amet, cons
-              ectetur adipiscing elit.
-            </base-text>
-            <base-btn class="mt-4">
-              Learn More!
-            </base-btn>
-          </v-flex>
-        </v-layout>
-
-        <base-bubble-2
-          style="transform: rotate(180deg) translate(-200px, -15%)"
-        />
-      </v-flex>
+      <v-img
+        :src="require('../assets/about.jpg')"
+        height="100vh">
+        <v-row align="end" justify="end" class="text-right fill-height pa-md-5 pa-3 mx-0">
+          <div>
+            <p class="aziz text-uppercase font-weight-regular" :class="{'display-1': $vuetify.breakpoint. smAndDown, 'display-3': $vuetify.breakpoint. mdAndUp}">
+              Muh Aziz Iqbal
+            </p>
+            <p class="aziz text-uppercase" :class="{'display-2': $vuetify.breakpoint. smAndDown, 'display-4': $vuetify.breakpoint. mdAndUp}" style="color:#FFAA00;">
+              Front-end Developer
+            </p>
+          </div>
+        </v-row>
+      </v-img>
     </v-layout>
   </section>
 </template>
+
+<style scoped>
+  @font-face {
+    font-family: roboto;
+    src: url(../static/Roboto-Light.ttf) format("truetype");
+  }
+  .aziz {
+    font-family: roboto;
+  }
+</style>

@@ -1,7 +1,7 @@
 # Muh Aziz Iqbal
 
 > Portofolio Muh Aziz Iqbal, 
-> Made with Vue.js, Nuxt.js and Vuetify
+> Made with Vue.js, Nuxt.js and Vuetify. Demo : [https://aziziqbal.com]
 
 
 ## Build Setup
@@ -23,4 +23,4 @@ $ npm run generate
 
 ## Something Missing?
 
-If you have a feature request or found a bug, [muhaziziqbal06@gmail.com]
+If you have a feature request or found a bug, [info@aziziqbal.com]

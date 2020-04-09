@@ -7,7 +7,6 @@
       fixed
       app
       style="background-color:rgb(24, 24, 24);border-color: rgb(24, 24, 24);overflow-y: hidden;"
-      @click="coba(event)"
     >
       <v-list-item class="text-center">
         <v-list-item-content>
@@ -28,6 +27,7 @@
           v-for="(item, i) in items"
           :key="i"
           :to="item.to"
+          @click="coba(item)"
           router
           exact
         >
@@ -52,7 +52,7 @@
 
 <script>
 export default {
-  data () {
+  data() {
     return {
       clipped: false,
       variant: false,
@@ -102,8 +102,9 @@ export default {
     }
   },
   methods: {
-    coba (item) {
+    coba(item) {
       console.log(item)
+      // this.$vuetify.goTo(item.to)
     }
   }
 }

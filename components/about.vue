@@ -2,7 +2,7 @@
   <section id="about" class="hide-overflow">
     <v-layout>
       <v-img
-        :src="require('../assets/about.jpg')"
+        src="https://aziziqbal.com/bg_image/bg_about.jpg"
         height="100vh">
         <v-row align="end" justify="end" class="text-right fill-height pa-md-5 pa-3 mx-0">
           <div>

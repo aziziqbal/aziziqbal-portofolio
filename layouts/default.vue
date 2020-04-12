@@ -10,7 +10,7 @@
     >
       <v-list-item class="text-center">
         <v-list-item-content>
-          <v-list-item-title class="title">
+          <v-list-item-title class="title2">
             AI
           </v-list-item-title>
           <v-list-item-title class="nama">
@@ -114,7 +114,7 @@ export default {
     font-family: roboto;
     src: url(../static/Roboto-Light.ttf) format("truetype");
   }
-  .title {
+  .title2 {
     font-family: roboto;
     color: #ffaa00 !important;
     caret-color: #ffaa00 !important;

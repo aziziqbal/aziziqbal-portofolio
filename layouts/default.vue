@@ -72,27 +72,27 @@ export default {
         {
           icon: 'mdi-chart-bubble',
           title: 'Experience',
-          to: '/inspire'
+          to: '#experience'
         },
         {
           icon: 'mdi-chart-bubble',
           title: 'Skill & Education',
-          to: '/inspire'
+          to: '#skill'
         },
         {
           icon: 'mdi-chart-bubble',
           title: 'Portofolio',
-          to: '/inspire'
+          to: '#portofolio'
         },
         {
           icon: 'mdi-chart-bubble',
           title: 'Clients',
-          to: '/inspire'
+          to: '#clients'
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'Contacs',
-          to: '/inspire'
+          title: 'Contact',
+          to: '#contact'
         }
       ],
       miniVariant: false,

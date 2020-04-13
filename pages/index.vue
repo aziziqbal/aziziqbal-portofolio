@@ -1,5 +1,6 @@
 <template>
-  <div class="main-container">
+  <div>
+    <home />
     <about />
     <services />
     <experience />
@@ -11,6 +12,7 @@
 </template>
 
 <script>
+import Home from '~/components/home.vue'
 import About from '~/components/about.vue'
 import Services from '~/components/services.vue'
 import Experience from '~/components/experience.vue'
@@ -21,6 +23,7 @@ import Clients from '~/components/Clients.vue'
 
 export default {
   components: {
+    Home,
     About,
     Services,
     Clients,

@@ -8,7 +8,7 @@
       app
       style="background-color:rgb(24, 24, 24);border-color: rgb(24, 24, 24);overflow-y: hidden;"
     >
-      <v-list-item class="text-center">
+      <v-list-item class="text-center" @click="$vuetify.goTo('#home')">
         <v-list-item-content>
           <v-list-item-title class="title2">
             AI
@@ -27,7 +27,6 @@
           v-for="(item, i) in items"
           :key="i"
           :to="item.to"
-          @click="coba(item)"
           router
           exact
         >
@@ -43,7 +42,7 @@
       </template>
     </v-navigation-drawer>
     <v-content>
-      <v-container style="padding:0px;">
+      <v-container fluid style="padding:0px;">
         <nuxt />
       </v-container>
     </v-content>
@@ -102,9 +101,8 @@ export default {
     }
   },
   methods: {
-    coba(item) {
-      console.log(item)
-      // this.$vuetify.goTo(item.to)
+    toHome() {
+      console.log('home')
     }
   }
 }

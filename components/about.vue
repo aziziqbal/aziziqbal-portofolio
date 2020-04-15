@@ -20,6 +20,7 @@
                 called Diffable Academy. If you wanna talk to me about a project collaboration or just say hi,
                 please send an email.
               </div>
+              <v-img eager class="ml-auto" style="width:230px;" position="right" :src="require('../assets/signature.png')" />
             </v-col>
             <v-col cols="12" md="4">
               <v-row class="row align-center">

@@ -1,15 +1,50 @@
 <template>
   <section id="services" class="hide-overflow">
     <v-layout style="height:100vh;background-color:#303030;">
-      <!-- <v-img v-bind:src="'data:image/jpeg;base64,'+imageBytes" class="gambar"> -->
-      <!-- </v-img> -->
-      <!-- <v-row style="z-index:1" class=" pa-md-5 pa-3 mx-0">
-        <v-col cols="12">
+      <v-img eager contain class="gambar hidden-sm-and-down" height="150vh"  position="right" :src="require('../assets/aziz3.png')" />
+      <v-row style="z-index:1" class="pa-md-5 pa-3 mx-0">
+        <v-col cols="12" style="margin-top:5vh;">
           <h2 class="font-weight-bold display-2" style="color:#FFAA00;">
-            Services
+            What I can do for you.
           </h2>
         </v-col>
-      </v-row> -->
+        <v-col cols="12" md="7" style="height:60vh;">
+          <v-row class="justify-space-between">
+            <v-col cols="12" md="7">
+              <v-expansion-panels pop>
+                <v-expansion-panel>
+                  <v-expansion-panel-header>Web Development</v-expansion-panel-header>
+                  <v-expansion-panel-content>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </v-expansion-panel-content>
+                </v-expansion-panel>
+                <v-expansion-panel>
+                  <v-expansion-panel-header>UI / UX Design</v-expansion-panel-header>
+                  <v-expansion-panel-content>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </v-expansion-panel-content>
+                </v-expansion-panel>
+                <v-expansion-panel>
+                  <v-expansion-panel-header>Android Development</v-expansion-panel-header>
+                  <v-expansion-panel-content>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </v-expansion-panel-content>
+                </v-expansion-panel>
+                <v-expansion-panel>
+                  <v-expansion-panel-header>Internet Of Things</v-expansion-panel-header>
+                  <v-expansion-panel-content>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </v-expansion-panel-content>
+                </v-expansion-panel>
+              </v-expansion-panels>
+            </v-col>
+          </v-row>
+        </v-col>
+        <v-col md="5" class="hidden-sm-and-down text-right text-uppercase" style="position: absolute!important;right:0px;top: 120vh;">
+          <div class="display-1" style="color:white;font-weight:500;">Front-end Developer</div>
+          <span class="warna headline" style="font-weight:500;">Muh Aziz Iqbal</span>
+        </v-col>
+      </v-row>
     </v-layout>
   </section>
 </template>
@@ -27,8 +62,8 @@ export default {
 <style scoped>
   .gambar {
     position: absolute!important;
-    left: -48px;
-    top: 96vh;
+    right: -48px;
+    top: 160vh;
     z-index: 0!important;
   }
   @font-face {
@@ -37,5 +72,10 @@ export default {
   }
   .aziz {
     font-family: roboto;
+  }
+  .warna {
+    color:#FFAA00;
+  }
+  .detail-warna {
   }
 </style>

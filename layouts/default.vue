@@ -43,6 +43,13 @@
     </v-navigation-drawer>
     <v-content>
       <v-container fluid style="padding:0px;">
+        <!-- {{ drawer }}
+        <v-btn class="ma-2" color="primary" dark @click="drawer = true">Accept
+          <v-icon dark right>mdi-checkbox-marked-circle</v-icon>
+        </v-btn>
+        <v-btn class="ma-2" color="primary" dark @click="drawer = false">Accept
+          <v-icon dark right>mdi-checkbox-marked-circle</v-icon>
+        </v-btn> -->
         <nuxt />
       </v-container>
     </v-content>
@@ -98,6 +105,11 @@ export default {
       right: true,
       rightDrawer: false,
       title: 'Vuetify.js'
+    }
+  },
+  watch: {
+    drawer() {
+      console.log(this.drawer)
     }
   },
   methods: {

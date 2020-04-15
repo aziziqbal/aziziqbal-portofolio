@@ -1,5 +1,5 @@
 <template>
-  <section id="experience" class="hide-overflow">
+  <section id="experience" class="hide-overflow" style="position:relative;">
     <v-layout style="height:100vh;background-color:#303030;">
       <!-- <v-img v-bind:src="'data:image/jpeg;base64,'+imageBytes" class="gambar" style="z-index:0;"> -->
       <!-- </v-img> -->

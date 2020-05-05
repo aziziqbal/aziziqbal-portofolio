@@ -1,8 +1,8 @@
 # Muh Aziz Iqbal
 
-> Portofolio Muh Aziz Iqbal, 
+> Portofolio Muh Aziz Iqbal, <br />
 > Made with Vue.js, Nuxt.js and Vuetify. <br />
-> Demo : [https://aziziqbal.com]<br /><br />
+> Demo : [https://aziziqbal.com]<br />
 >
 >![Screenshot](https://github.com/aziziqbal/aziziqbal-portofolio/blob/master/screenshot.PNG?raw=true)
 >

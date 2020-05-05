@@ -2,9 +2,9 @@
   <section id="home" class="hide-overflow">
     <v-layout>
         <v-img
-          src="https://aziziqbal.com/bg_image/42.jpg"
+          :src="require('../assets/42.jpg')"
           height="100vh">
-          <v-row align="end" justify="end" class="text-right fill-height pa-md-5 pa-3 mx-0">
+          <v-row data-aos="fade-down" data-aos-duration="1500" align="end" justify="end" class="text-right fill-height pa-md-5 pa-3 mx-0">
             <div>
               <p class="aziz text-uppercase font-weight-regular" :class="{'display-1': $vuetify.breakpoint. smAndDown, 'display-3': $vuetify.breakpoint. mdAndUp}">
                 Muh Aziz Iqbal
@@ -15,7 +15,7 @@
             </div>
           </v-row>
         </v-img>
-        <vue-particles class="hidden-sm-and-down" :moveSpeed="10" color="#dedede"></vue-particles>
+        <vue-particles class="hidden-sm-and-down" :moveSpeed="2" color="#dedede"></vue-particles>
     </v-layout>
   </section>
 </template>

@@ -41,15 +41,8 @@
         </div>
       </template>
     </v-navigation-drawer>
-    <v-content>
-      <v-container fluid style="padding:0px;">
-        <!-- {{ drawer }}
-        <v-btn class="ma-2" color="primary" dark @click="drawer = true">Accept
-          <v-icon dark right>mdi-checkbox-marked-circle</v-icon>
-        </v-btn>
-        <v-btn class="ma-2" color="primary" dark @click="drawer = false">Accept
-          <v-icon dark right>mdi-checkbox-marked-circle</v-icon>
-        </v-btn> -->
+    <v-content class="coba">
+      <v-container fluid style="padding:0px;overflow-x:hidden;">
         <nuxt />
       </v-container>
     </v-content>
@@ -104,7 +97,11 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js'
+      title: 'Vuetify.js',
+      window: {
+        width: 0,
+        height: 0
+      },
     }
   },
   watch: {
@@ -112,9 +109,23 @@ export default {
       console.log(this.drawer)
     }
   },
+  created() {
+    window.addEventListener('resize', this.handleResize);
+    this.handleResize();
+  },
+  destroyed() {
+    window.removeEventListener('resize', this.handleResize);
+  },
   methods: {
     toHome() {
       console.log('home')
+    },
+    handleResize() {
+      this.window.width = window.innerWidth
+      this.window.height = window.innerHeight
+      if (this.window.width < 1024) {
+        this.drawer = false
+      }
     }
   }
 }

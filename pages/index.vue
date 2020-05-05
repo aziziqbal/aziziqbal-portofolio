@@ -1,5 +1,10 @@
 <template>
   <div>
+    <!-- <v-snackbar v-model="show" :color="color" top right :vertical="vertical">
+      <h3 style="margin-bottom:10px;"><b>Info</b></h3>
+      Website is under construction !
+      <v-btn text @click="show = false">Close</v-btn>
+    </v-snackbar> -->
     <home />
     <about />
     <services />
@@ -34,6 +39,10 @@ export default {
   },
   data() {
     return {
+      show: true,
+      vertical: true,
+      message: '',
+      color: 'red darken-1',
       zIndex: 0,
       zIndex2: 10
     }

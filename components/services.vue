@@ -1,14 +1,14 @@
 <template>
   <section id="services" class="hide-overflow">
     <v-layout style="height:100vh;background-color:#303030;">
-      <v-img eager contain class="gambar hidden-sm-and-down" height="150vh"  position="right" :src="require('../assets/aziz3.png')" />
+      <v-img data-aos="fade-left" eager contain class="gambar hidden-sm-and-down" height="150vh"  position="right" :src="require('../assets/aziz4.png')" />
       <v-row style="z-index:1" class="pa-md-5 pa-3 mx-0">
         <v-col cols="12" style="margin-top:5vh;">
-          <h2 class="font-weight-bold display-2" style="color:#FFAA00;">
+          <h2 data-aos="fade-right" class="font-weight-bold display-2" style="color:#FFAA00;">
             What I can do for you.
           </h2>
         </v-col>
-        <v-col cols="12" md="7" style="height:60vh;">
+        <v-col data-aos="fade-right" cols="12" md="7" style="height:60vh;">
           <v-row class="justify-space-between">
             <v-col cols="12" md="7">
               <v-expansion-panels pop>
@@ -40,10 +40,6 @@
             </v-col>
           </v-row>
         </v-col>
-        <v-col md="5" class="hidden-sm-and-down text-right text-uppercase" style="position: absolute!important;right:0px;top: 120vh;">
-          <div class="display-1" style="color:white;font-weight:500;">Front-end Developer</div>
-          <span class="warna headline" style="font-weight:500;">Muh Aziz Iqbal</span>
-        </v-col>
       </v-row>
     </v-layout>
   </section>
@@ -62,7 +58,7 @@ export default {
 <style scoped>
   .gambar {
     position: absolute!important;
-    right: -48px;
+    right: 0px;
     top: 160vh;
     z-index: 0!important;
   }

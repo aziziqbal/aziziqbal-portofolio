@@ -1,14 +1,14 @@
 <template>
   <section id="about" class="hide-overflow">
-    <v-layout style="height:100vh;background-color:#303030;">
+    <v-layout style="background-color:#303030;">
       <v-img v-bind:src="'data:image/jpeg;base64,'+imageBytes" contain class="gambar" />
       <v-row style="z-index:1" class="pa-md-5 pa-3 mx-0">
         <v-col cols="12" style="margin-top:5vh;">
-          <h2 class="font-weight-bold display-2" style="color:#FFAA00;">
+          <h2 data-aos="fade-right" class="font-weight-bold display-2" style="color:#FFAA00;">
             Who I am ?
           </h2>
         </v-col>
-        <v-col cols="12" md="7" style="height:60vh;">
+        <v-col data-aos="fade-right" cols="12" md="7" style="">
           <v-row class="justify-space-between">
             <v-col cols="12" md="7">
               <div class="subheading mb-5 mb-0" style="font-weight:400;font-family:roboto;line-height: 1.7;">
@@ -24,14 +24,14 @@
             </v-col>
             <v-col cols="12" md="4">
               <v-row class="row align-center">
-                <v-col cols="6" class="text-uppercase primary--text font-weight-medium">
+                <v-col cols="6" md="6" class="text-uppercase primary--text font-weight-medium">
                   <div class="warna mb-3">Location</div>
                   <div class="warna mb-3">Email</div>
                   <div class="warna mb-3">Phone</div>
                   <div class="warna mb-3">Linkedin</div>
                   <div class="warna mb-3">Github</div>
                 </v-col>
-                <v-col cols="6" class="subheading text-no-wrap">
+                <v-col cols="6" md="6" class="subheading text-no-wrap">
                   <div class="mb-3">Yogyakarta</div>
                   <div class="mb-3">info@aziziqbal.com</div>
                   <div class="mb-3">+62 8592-5091-508</div>
@@ -42,7 +42,7 @@
             </v-col>
           </v-row>
         </v-col>
-        <v-col md="5" class="hidden-sm-and-down text-right text-uppercase" style="position: absolute!important;right:0px;top: 120vh;">
+        <v-col data-aos="fade-up" md="5" class="hidden-sm-and-down text-right text-uppercase" style="position: absolute!important;right:0px;top: 120vh;">
           <div class="display-1" style="color:white;font-weight:500;">Front-end Developer</div>
           <span class="warna headline" style="font-weight:500;">Muh Aziz Iqbal</span>
         </v-col>

@@ -1,7 +1,7 @@
 <template>
   <section id="services" class="hide-overflow">
     <v-layout style="height:100vh;background-color:#303030;">
-      <v-img data-aos="fade-left" eager contain class="gambar hidden-sm-and-down" height="150vh"  position="right" :src="require('../assets/aziz4.png')" />
+      <v-img data-aos="fade-left" eager contain class="gambar hidden-sm-and-down" height="130vh"  position="right" :src="require('../assets/aziz5.png')" />
       <v-row style="z-index:1" class="pa-md-5 pa-3 mx-0">
         <v-col cols="12" style="margin-top:5vh;">
           <h2 data-aos="fade-right" class="font-weight-bold display-2" style="color:#FFAA00;">

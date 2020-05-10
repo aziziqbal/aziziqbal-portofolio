@@ -31,11 +31,11 @@ export default {
     Home,
     About,
     Services,
+    Experience,
     Clients,
     Skill,
     Contact,
     Portofolio,
-    Experience
   },
   data() {
     return {

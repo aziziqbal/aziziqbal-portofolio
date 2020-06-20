@@ -31,7 +31,8 @@ export default {
   */
   plugins: [
     '@/plugins/smooth.js',
-    '@/plugins/aos.js'
+    '@/plugins/aos.js',
+    '@/plugins/tawk.js'
   ],
   /*
   ** Nuxt.js dev-modules

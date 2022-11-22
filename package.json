@@ -15,7 +15,7 @@
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/pwa": "^3.0.0-0",
     "aos": "^3.0.0-beta.6",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.15.8",
     "vue-particles": "^1.0.9",
     "vue-tawk": "^1.0.1",
     "vue2-smooth-scroll": "^1.2.0"
